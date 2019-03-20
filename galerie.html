@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <style>
+    .container {
+      position: relative;
+    }
+    
+    #title_galery {
+      text-align: center;
+      color: var(--bright_text_color);
+    }
+    
+    #slider,
+    .slide-content {
+      
+      margin: 10px;
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    
+    /* justify and put img and text in the center also put the text in the bottom of the image */
+    .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* limit the size of the image but keep it responsive */
+    .slide-content img  {
+      display: block;
+      align-content: center;
+      max-height: 70vh;  
+    }
+    
+    .slide-content span {
+      font-size: 2rem;
+      color: var(--bright_text_color);
+    }
+    /* design of both arrow */
+    .arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      margin-top: -35px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+    
+    #arrow-left {
+      border-width: 30px 40px 30px 0;
+      border-color: transparent #fff transparent transparent;
+      left: 0;
+      margin-left: 30px;
+    }
+    
+    #arrow-right {
+      border-width: 30px 0 30px 40px;
+      border-color: transparent transparent transparent #fff;
+      right: 0;
+      margin-right: 30px;
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <header>
+    <div class="container"> 
+      <div id="indexTitle">
+        <a href="index.html"><h1><span class="highlight">WebHammer</span> a Warhammer fansite</h1></a>
+      </div>
+      <nav>
+        <ul class="navbar">
+          <li ><a href="index.html">Home</a></li> 
+          <li ><a href="project.html">Project</a></li> 
+          <li><a href="tutorial.html">Tuto</a></li>
+          <li><a href="batrep.html">Batle repport</a></li>
+          <li class="current"><a href="galerie.html">Gallery</a></li> 
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <div class="container">
+    <h1 id="title_galery">My models</h1>
+    
+    
+    <div class="slider_box">   <!-- a box that contain my images and arow  -->
+      <div id="arrow-left" class="arrow"></div> <!-- the arrow are made with css (there are simple triangle) -->
+      <div id="slider">
+        <div class="slide">
+          <div class="slide-content">
+            <a href="/img/broadside.jpg"><img src="/img/broadside.jpg" alt="broadside"></a>
+            <span>Broadside with heavy rail rifle</span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <a href="/img/cadre_fireblade.JPG"><img src="/img/cadre_fireblade.JPG" alt="cadre_fireblade"></a>
+            <span>Cadre fireblade</span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <a href="/img/steaallth.jpg"><img src="/img/steaallth.jpg" alt="Stealth_team"></a>
+            <span>Stealth team backed up by Remora drones</span>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <a href="/img/darkstrider.jpg"><img src="/img/darkstrider.jpg" alt="darkstrider"></a>
+            <span>Darkstrider</span>
+          </div>
+        </div>
+      </div>
+      <div id="arrow-right" class="arrow"></div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <footer>Work in progress</footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>

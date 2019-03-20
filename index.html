@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebHammer | Home</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <style>
+        /* Intro */
+        #intro{
+            min-height:300px;
+            background:url('../img/planet.jpg') no-repeat center;
+            text-align:center;
+            color:var(--bright_text_color);
+            background-size: cover;
+        }
+        
+        #intro h1{
+            margin-top:150px;
+            font-size:30px;
+            margin-bottom:10px;
+        }
+        
+        #intro p{
+            font-size:15px;
+            margin: 0px;
+        }
+
+        #intro a:hover{
+            text-shadow: 2px 2px 5px var(--highlight_color);
+        }
+        
+        /* Boxes */
+        #boxes{
+            margin-top:20px;
+        }
+        
+        #boxes .box{
+            float:left;
+            text-align: center;
+            width:30%;
+            padding:10px;
+        }
+        
+        #boxes .box img{
+            width:90px;
+        }
+        
+        #boxes a{
+            color: var(--main_text_color);
+            text-decoration: none;
+        }
+        
+        #boxes a:hover{
+            color: var(--bright_text_color);
+            text-shadow: 2px 2px 5px #000;
+            
+        }
+        
+        #boxes a:hover img{
+            box-shadow: 2px 2px 4px 2px var(--highlight_color);
+        }
+    </style>
+    
+</head>
+<body>
+    <header> 
+        <div class="container"> 
+            <div id="indexTitle">
+                <a href="index.html"><h1><span class="highlight">WebHammer</span> a Warhammer fansite</h1></a>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li class="current"><a href="index.html">Home</a></li> 
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="tutorial.html">Tuto</a></li>
+                    <li><a href="batrep.html">Batle repport</a></li>
+                    <li><a href="galerie.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="container">
+            <h1>Welcome to WebHammer a <a target="_blank" style="text-decoration:none; color:var(--bright_text_color);" href="https://en.wikipedia.org/wiki/Warhammer_40,000">Warhammer 40,000</a> website</h1>
+            <p>WebHammer is dedicated to the Tau army of Arnaud Bellanger.</p>
+            <p>You will be able to find different project that I am working on, some tutorial that I found interesting on internet, a batle report of my first Warhammer40k game and a galerie of some of my figurines</p>
+        </div>
+    </section>
+    
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <a href="project.html">
+                    <img src="./img/Kroot.JPG" alt="paint">
+                    <h3>Cool modeling project</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis exercitationem ab dolorem a sequi quae ducimus reiciendis iste itaque nam corporis consequatur deleniti odio, eaque molestias rem vitae culpa fugiat? </p></a>
+                </div>
+                <div class="box">
+                    <a href="tutorial.html">
+                        <img src="./img/engineer.jpg" alt="engineer">
+                        <h3>Last tutorial</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloremque maxime dolorum mollitia rem id commodi molestias quae suscipit non unde perferendis accusantium, assumenda quia impedit aut nostrum facilis eum? </p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="batrep.html">
+                        <img src="./img/blackwarrior.jpeg" alt="batrep">
+                        <h3>Last Batle repport</h3>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus amet tempore perferendis, et perspiciatis officiis, porro aspernatur facilis culpa saepe sint provident magni blanditiis corrupti, possimus unde maxime itaque veritatis. </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>Work in progress</footer>
+        
+    </body>
+    </html>
+
