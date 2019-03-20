@@ -25,8 +25,4 @@ For example I mainly learn how to use CSS grid with this 2 videos :
 https://youtu.be/jV8B24rSN5o
 https://youtu.be/moBhzSC455o
 
-The index.html page was inspired by the video https://youtu.be/Wm6CUkswsNw
-To make the gallery page I used this video https://youtu.be/7ZO2RTMNSAY to learn how to make the javascrip.
-I also learn how to make variable in css in the same youtube chanel.
-
 The rest of the website was made with-out tutorial and with my own inspiration.
